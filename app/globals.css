@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --coral: #FF6B6B;
+  --cream: #FFF5E6;
+}
+
+html {
+  direction: rtl;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Heebo', Arial, sans-serif;
+  background-color: #FFF5E6;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  /* Prevent iOS rubber-band showing white below nav */
+  overscroll-behavior-y: none;
+}
+
+/* Smooth tap highlights on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Bigger tap targets everywhere */
+button, a {
+  min-height: 44px;
+}
+
+/* RTL textarea */
+textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Fix safe-area for iPhone notch / home indicator */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Coral colors are defined in tailwind.config.js — no manual overrides needed */
