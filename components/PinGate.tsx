@@ -70,7 +70,7 @@ export default function PinGate({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-cream-100 flex flex-col items-center justify-center p-6 gap-8">
       {/* Icon */}
-      <div className="text-7xl">🌸</div>
+      <div className="text-7xl" style={{ filter: 'hue-rotate(200deg) saturate(1.5)' }}>🌸</div>
 
       <div className="text-center">
         <h1 className="text-3xl font-bold text-gray-700 mb-2">perfectMood</h1>
